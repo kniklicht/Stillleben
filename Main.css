@@ -1,0 +1,378 @@
+body {
+    background-color: azure;
+    width: 1200px;
+    margin: auto;
+}
+
+
+
+/*Blumentopf*/
+
+.topf {
+    top: 200px;
+    left: 100px;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    margin: auto;
+    background: linear-gradient(90deg,rgba(219, 219, 219, 1) 2%, rgba(189, 189, 189, 1) 31%, rgba(102, 100, 100, 1) 87%, rgba(117, 117, 117, 1) 100%);
+    transform: perspective(40px) rotateX(2deg) translate(0, 200px);
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+
+}
+
+.topf:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-top: 10px solid #bfbfbf;
+    top: -30px;
+    border-radius: 100%;
+    background: radial-gradient(circle,rgba(125, 104, 85, 1) 0%, rgba(64, 61, 61, 1) 100%);        
+}
+
+
+
+/*schwarzes großes Buch*/
+
+.buchGross {
+    position: relative;
+    width: 250px;
+    height: 370px;
+    margin: auto;
+    margin-top: 100px;
+    background: black;
+    transform: rotate(-45deg) skew(10deg, 10deg);   
+}
+
+.buchGross:after {
+    content: "     ㅤㅤ                 ㅤㅤ                 ㅤㅤ                 ㅤㅤ                 ㅤㅤ                             HFG KD TYPE READER ㅤㅤ                   23/24";
+    font-size: 20px;
+    color: aliceblue;
+    position: absolute;
+    width: 70px;
+    height: 370px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 1%, rgba(26, 26, 26, 1) 20%, rgba(33, 33, 33, 1) 51%, rgba(23, 22, 22, 1) 82%, rgba(0, 0, 0, 1) 100%);
+    margin-left: -70px;
+    margin-top: 35px;
+    transform: rotate(0) skew(0deg, -45deg);   
+    writing-mode: vertical-lr;
+}
+
+.buchGross:before {
+    content: "";
+    position: absolute;
+    width: 250px;   
+    height: 70px;
+    margin-top: 370px;
+    margin-left: -35px;
+    transform: rotate(0) skew(-45deg, 0deg);   
+    background: #000000;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 1%, rgba(189, 189, 189, 1) 8%, rgba(89, 89, 89, 1) 16%, rgba(191, 191, 191, 1) 22%, rgba(77, 77, 77, 1) 27%, rgba(163, 163, 163, 1) 32%, rgba(66, 66, 66, 1) 41%, rgba(176, 176, 176, 1) 49%, rgba(71, 71, 71, 1) 55%, rgba(156, 156, 156, 1) 62%, rgba(78, 78, 78, 1) 67%, rgba(204, 204, 204, 1) 72%, rgba(87, 87, 87, 1) 79%, rgba(166, 166, 166, 1) 86%, rgba(59, 59, 59, 1) 92%, rgba(112, 112, 112, 1) 96%, rgba(23, 22, 22, 1) 100%, rgba(0, 0, 0, 1) 100%);
+
+    
+}
+
+
+
+/*Holzblock*/
+
+.holz {
+    position: relative;
+    width: 150px;
+    height: 250px;
+    margin: auto;
+    top: 150px;
+    left: 370px;
+    transform: skew(0deg, -35deg) translate(-500px,-300px);  
+    background: linear-gradient(90deg,rgba(214, 201, 156, 1) 0%, rgba(204, 182, 135, 1) 100%);
+    
+}
+
+.holz:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 250px;
+    margin-left: -20px;
+    top: -10px;
+    transform: skew(0deg, 40deg);   
+    background: linear-gradient(-90deg,rgba(247, 228, 163, 1) 0%, rgba(255, 247, 201, 1) 100%);
+    
+}
+ 
+.holz:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    margin: auto;
+    top: -18px;
+    left: -10px;
+    transform: skew(50deg, 0deg);   
+background: linear-gradient(-90deg,rgba(247, 228, 163, 1) 0%, rgba(255, 247, 201, 1) 100%);
+
+    
+}
+
+
+
+/*Zahl*/
+
+.zahl {
+    position: relative;
+    color: azure; 
+    width: 100px;
+    margin: auto;
+    font-size: 200px;
+    font-family: Gill Sans;
+    transform: skew(0deg, -35deg) translate(-130px, -890px);  
+    text-shadow: 1px -10px #978959;
+ 
+}
+
+
+
+/*pinkes kleines Buch*/
+
+.buchKlein {
+    position: relative;
+    width: 130px;
+    height: 240px;
+    margin: auto;
+    color: black;
+    padding: 10px;
+    transform: rotate(-125deg) skewY(-20deg)
+        translate(380px, 276px);   
+    background: linear-gradient(90deg,rgba(217, 52, 159, 1) 0%, rgba(195, 17, 133, 1) 26%, rgba(158, 9, 106, 1) 100%);
+    
+}
+
+.buchKlein:after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    border-top: 1px solid #c31185;
+    transform: translate(-132px, -20px) skew(45deg, 0deg);   
+    background:  #E4EAE7;
+    background: linear-gradient(180deg, rgba(228, 234, 231, 1) 0%, rgba(190, 194, 192, 1) 16%, rgba(228, 234, 231, 1) 20%, rgba(190, 194, 192, 1) 23%, rgba(228, 234, 231, 1) 27%, rgba(190, 194, 192, 1) 32%, rgba(228, 234, 231, 1) 37%, rgba(190, 194, 192, 1) 44%, rgba(228, 234, 231, 1) 54%, rgba(190, 194, 192, 1) 57%, rgba(228, 234, 231, 1) 62%, rgba(190, 194, 192, 1) 65%, rgba(228, 234, 231, 1) 68%, rgba(190, 194, 192, 1) 71%, rgba(228, 234, 231, 1) 74%, rgba(190, 194, 192, 1) 77%, rgba(228, 234, 231, 1) 82%, rgba(228, 234, 231, 1) 100%);
+
+    
+}
+
+.buchKlein:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 260px;
+    transform: translate(-20px, -15px) skew(0deg, 45deg);  
+    background: linear-gradient(-90deg,rgba(222, 80, 172, 1) 0%, rgba(110, 12, 76, 1) 26%, rgba(110, 12, 76, 1) 100%);
+}
+
+
+
+/*Stift*/
+
+.stift {
+    border-style: solid;
+    border-color: transparent transparent #74601f transparent;
+    border-width: 0 4px 5px 4px;
+    height: 0;
+    width: 6px;
+    box-sizing: content-box;
+    position: relative;
+    margin: auto;
+    transform: rotate(40deg) translate(-270px, -410px);
+}
+
+.stift:after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: -4px;
+    height: 0;
+    border-style: solid;
+    border-color: #766632 transparent transparent transparent;
+    border-width: 7px 7px 0 7px;
+    }
+
+.stift:before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    top: 5px;
+    left: -3px;
+    width: 12px;
+    background: linear-gradient(90deg,rgba(162, 145, 89, 1) 0%, rgba(162, 145, 89, 1) 21%, rgba(166, 152, 113, 1) 28%, rgba(197, 178, 130, 1) 43%, rgba(162, 145, 89, 1) 55%, rgba(118, 102, 50, 1) 74%, rgba(118, 102, 50, 1) 100%);
+}
+
+
+
+/*Stämme*/
+
+#stem1 {
+    position: absolute;
+    width: 50px; 
+    height: 10px;  
+    margin: auto;
+    border: solid 5px #009a48;
+    border-color: #007b26 transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+    transform: translate(660px, -1000px) rotate(90deg) scale(3,1);
+}
+
+#stem2 {
+    position: absolute;
+    width: 50px; 
+    height: 10px;  
+    margin: auto;
+    border: solid 5px #009a48;
+    border-color: #007b26 transparent transparent transparent;
+    border-radius: 50%/20px 20px 0 0;
+    transform: translate(640px, -980px) rotate(70deg) scale(2,1);
+}
+
+#stem3 {
+    position: absolute;
+    width: 50px; 
+    height: 10px;  
+    margin: auto;
+    border: solid 5px #009a48;
+    border-color: #007b26 transparent transparent transparent;
+    border-radius: 50%/20px 20px 0 0;
+    transform: translate(720px, -1000px) rotate(-70deg) scale(4,1);
+}
+
+#stem4 {
+    position: absolute;
+    width: 50px; 
+    height: 10px;  
+    margin: auto;
+    border: solid 5px #009a48;
+    border-color: #007b26 transparent transparent transparent;
+    border-radius: 50%/20px 20px 0 0;
+    transform: translate(600px, -1000px) rotate(-100deg) scale(2,1);
+}
+
+
+/*Blätter*/
+
+#blatt1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 40% 30% 50% 80% / 40% 50% 80% 70%;
+    transform: translate(200px, -1000px) rotate(-10deg);
+    background: linear-gradient(167deg,rgba(107, 166, 86, 1) 2%, rgba(98, 191, 55, 1) 20%, rgba(65, 115, 42, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;    
+
+
+}
+
+#blatt2 {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 60% 50% 50% 80% / 60% 50% 90% 70%;
+    transform: translate(10px, -1090px) rotate(20deg);
+    background: linear-gradient(250deg,rgba(107, 166, 86, 1) 2%, rgba(71, 158, 62, 1) 35%, rgba(46, 92, 30, 1) 100%);    
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+
+
+}
+
+#blatt3 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 60% 50% 80% 70%;
+    transform: translate(70px, -1130px) rotate(20deg);
+    background: linear-gradient(250deg,rgba(107, 166, 86, 1) 2%, rgba(90, 153, 84, 1) 35%, rgba(65, 115, 42, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+
+
+}
+
+#blatt4 {
+    position: relative;
+    width: 80px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(140px, -1300px) rotate(10deg);
+    background: linear-gradient(122deg,rgba(107, 166, 86, 1) 2%, rgba(92, 168, 57, 1) 35%, rgba(65, 115, 42, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+    
+}
+
+#blatt5 {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(140px, -1300px) rotate(10deg);
+    background: linear-gradient(43deg,rgba(107, 166, 86, 1) 2%, rgba(88, 156, 56, 1) 35%, rgba(65, 115, 42, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+    
+}
+
+#blatt6 {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(20px, -1450px) rotate(-10deg);
+    background: linear-gradient(-250deg,rgba(107, 166, 86, 1) 2%, rgba(71, 158, 62, 1) 35%, rgba(46, 92, 30, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+   
+}
+
+#blatt7 {
+    position: relative;
+    width: 60px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(60px, -1450px) rotate(10deg);
+    background: linear-gradient(251deg,rgba(107, 166, 86, 1) 2%, rgba(83, 158, 62, 1) 79%, rgba(46, 92, 30, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+    
+}
+
+#blatt8 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(90px, -1580px) rotate(40deg);
+    background: linear-gradient(251deg,rgba(68, 92, 60, 1) 2%, rgba(83, 158, 62, 1) 79%, rgba(46, 92, 30, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+    
+}
+
+#blatt9 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 50% 30% 50% 80% / 30% 50% 80% 70%;
+    transform: translate(190px, -1650px) rotate(-40deg);
+    background: linear-gradient(251deg,rgba(98, 163, 86, 1) 2%, rgba(80, 181, 53, 1) 19%, rgba(46, 92, 30, 1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+    
+}
+
+
+
+
+
+
